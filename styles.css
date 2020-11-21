@@ -1,0 +1,434 @@
+:root {
+  --bg: #0e1212;
+  --purple: #682ae9;
+  --light: #dbdbdb;
+  --gray: gray;
+  --comment: #555555;
+}
+
+body {
+  background-color: var(--bg);
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-weight: bolder;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: var(--light);
+}
+
+h2 {
+  font-size: 1.6em;
+  color: var(--purple);
+}
+
+.wrapper-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-about,
+.desc-project {
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: var(--light);
+  margin: 0;
+}
+
+.list-about, .list-project, .list-skills {
+  padding: 0;
+  list-style: none;
+}
+
+.about-section ,.contact-section {
+  margin-top: 15vh;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 7%;
+}
+
+.navigation {
+  display: none;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-img {
+  padding: 15px;
+}
+
+.header {
+  position: relative;
+  top: 3%;
+}
+
+.surname {
+  color: var(--purple);
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
+
+.subtitle {
+  line-height: 0.9em;
+}
+
+.desc-header {
+  color: var(--gray);
+  line-height: 1.5em;
+  font-size: 0.9em;
+  width: 80%;
+}
+
+.bar,
+.bar-top {
+  width: 0px;
+  border: 1px solid;
+}
+
+.container-bar {
+  position: relative;
+  margin-top: 50vh;
+}
+
+.bar-top {
+  border-image: linear-gradient(
+    to top,
+    rgba(104, 42, 233, 0.2) 0%,
+    rgba(104, 42, 233, 0.3) 20%,
+    rgba(104, 42, 233, 0.4) 100%
+  );
+  border-image-slice: 1;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+.bar {
+  height: 50vh;
+  position: fixed;
+  bottom: 0;
+  border-image: linear-gradient(
+    to bottom,
+    rgba(104, 42, 233, 1) 0%,
+    rgba(104, 42, 233, 0.8) 40%,
+    rgba(14, 18, 18, 1) 100%
+  );
+  border-image-slice: 1;
+}
+
+.bullet {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  margin-left: -6px;
+  padding: 0;
+}
+
+.bullet > li:before {
+  content: '\25CF';
+  font-size: 20px;
+  color: var(--purple);
+}
+
+/* WORKS SECTION */
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+.comment,
+.comment-title {
+  margin: 0;
+  color: var(--comment);
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+.comment-title {
+  color: var(--gray);
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.list-project {
+  margin: 0;
+}
+
+.list-project li {
+  padding-top: 50px;
+}
+
+.details {
+  margin-top: 8px;
+}
+
+.img-project {
+  width: 70%;
+}
+
+.desc-project {
+  font-size: 1em;
+}
+
+/* ABOUT SECTION */
+
+.resume {
+  color: var(--gray);
+}
+
+.header-desc {
+  color: var(--purple);
+  width: 95%;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.title-about {
+  color: var(--light);
+  font-size: 1.1em;
+  width: 80%;
+}
+
+.list-about li {
+  padding-top: 20px;
+  color: var(--gray);
+  font-size: 0.95em;
+  font-weight: 500;
+  width: 90%;
+}
+
+.skill-experience p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+.skill-one,
+.skill-two,
+.skill-three {
+  padding-top: 15px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  margin-bottom: 15%;
+}
+
+.btn-resume {
+  border: none;
+  height: 30px;
+  width: 44%;
+  border-radius: 30px;
+  background-color: var(--purple);
+  color: var(--bg);
+  font-size: 0.9em;
+  font-family: Roboto Mono;
+  font-weight: bold;
+}
+
+#github-icon {
+  color: var(--purple);
+  font-size: 1.6em;
+}
+
+/* RESPONSIVES */
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-gap: 4%;
+  }
+
+   .surname {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+  }
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 2.1em;
+    width: 90%;
+  }
+
+  .header {
+    top: 1%;
+  }
+
+  .subtitle {
+    line-height: 1em;
+  }
+
+  .desc-header {
+    font-size: 1em;
+    font-weight: bold;
+    width: 75%;
+  }
+
+  .bullet > li:before {
+    font-size: 22px;
+  }
+
+  .list-project li {
+    display: flex;
+  }
+
+  .details {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .img-project {
+    width: 30%;
+  }
+
+  .desc-project {
+    font-size: 1em;
+  }
+
+  .header-desc {
+    font-weight: 400;
+    width: 75%;
+  }
+
+  .list-about li {
+    width: 100%;
+  }
+
+  .contact-section {
+    margin-bottom: 20%;
+  }
+  
+  .btn-resume {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    margin-left: 25%;
+  }
+
+  .navigation {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .navigation .nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 420px;
+    margin-right: 3%;
+    z-index: 3;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light);
+  }
+
+  .nav-list a:hover {
+    color: var(--purple);
+    transition-duration: 0.5s;
+  }
+
+  .fab {
+    color: var(--purple);
+    font-size: 1.4em;
+    margin-left: 5px;
+  }
+
+  .fab:hover {
+    color: var(--light);
+    transition-duration: 0.5s;
+  }
+
+  .menu-img {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .header {
+    top: 0%;
+    width: 60%;
+  }
+
+  .header-desc {
+    width: 100%;
+  }
+
+  .title-about {
+    font-size: 1.4em;
+  }
+
+  .list-about li {
+    font-size: 1em;
+  }
+
+  .skill-experience p {
+    font-size: 1em;
+  }
+
+  #github-icon {
+    font-size: 2em;
+  }
+
+  .contact-section {
+    height: 60vh;
+    margin-bottom: 10%;
+  }
+
+  .btn-resume {
+    width: 30%;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .contact-section {
+    height: 60vh;
+    margin-bottom: 0%;
+  }
+
+  .btn-resume {
+    width: 25%;
+  }
+}
+

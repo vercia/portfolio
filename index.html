@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/cc094bb8c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container-bar">
+        <div class="bar-top"></div>
+        <div class="bar">
+          <ul class="bullet">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper-sections">
+
+        <!-- MAIN SECTION -->
+        <div class="main-section" id="main">
+          <div class="mobile-nav">
+            <img src="images/menu.png" class="menu-img" />
+          </div>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="#main">.is()</a></li>
+              <li><a href="#work">.work()</a></li>
+              <li><a href="#about">.about()</a></li>
+              <li><a href="#contact">.contact()</a></li>
+              <li>
+                <a><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header">
+            <h1>weronika<span style="color: #682ae9">.is()</span></h1>
+            <div class="subtitle">
+              <p class="surname">Weronika Grzeszczyk</p>
+              <p class="desc-header">
+                Creative frontend developer, designer, and illustrator.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORK SECTION -->
+        <div class="work-section" id="work">
+          <div></div>
+          <div class="header">
+            <h1>work (<span style="color: #682ae9">'selected'</span>)</h1>
+            <p class="comment-title">
+              // Some special projects explained in details.
+            </p>
+          </div>
+          <ul class="list-project">
+            <li>
+              <img class="img-project" src="./images/project1.png" />
+              <div class="details">
+                <h2>Confianca Delivery</h2>
+                <p class="comment">// 2018 - BizCommerce</p>
+                <p class="desc-project">Supermarket online delivery store</p>
+              </div>
+            </li>
+            <li>
+              <img class="img-project" src="./images/project2.png" />
+              <div class="details">
+                <h2>Confianca Delivery</h2>
+                <p class="comment">// 2018 - BizCommerce</p>
+                <p class="desc-project">Supermarket online delivery store</p>
+              </div>
+            </li>
+            <li>
+              <img class="img-project" src="./images/project4.png" />
+              <div class="details">
+                <h2>Confianca Delivery</h2>
+                <p class="comment">// 2018 - BizCommerce</p>
+                <p class="desc-project">Supermarket online delivery store</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="about-section" id="about">
+          <div class="header">
+            <h1 style="width: 50%">
+              about (<span style="color: #682ae9">'selected'</span>)
+            </h1>
+            <p class="comment-title">
+              // Now something about me
+            </p>
+            <p class="header-desc">
+              I am creative frontend developer, designer and illustrator. From
+              brazil, based in Berlin.
+            </p>
+          </div>
+          <ul class="list-about">
+            <li>
+              <h2 class="title-about">Main skills</h2>
+              <ul class="list-skills">
+                <li>Frontend development, UX/UI desingn</li>
+                <li>Javascript, CSS, HTML, Vue, jQuery, GSAP</li>
+                <li>Photoshop, Illustrator</li>
+                <li>Strategic thinking, Storytelling</li>
+                <li>E-commerce, Magento, WordPress</li>
+                <li>Graphic design, Brand design</li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="title-about">Languages</h2>
+              <div class="skill-experience skill-one">
+                <p class="comment">// fluent</p>
+                <p>
+                  <span style="color:#682ae9"><i>pt-BR</i></span> Portugues,
+                </p>
+                <p>
+                  <span style="color:#682ae9"><i>en-US</i></span> English
+                </p>
+              </div>
+              <div class="skill-experience skill-two">
+                <p class="comment">// intermediate</p>
+                <p>
+                  <span style="color:#682ae9"><i>es-ES</i></span> Espanol
+                </p>
+              </div>
+              <div class="skill-experience skill-three">
+                <p class="comment">// basic</p>
+                <p>
+                  <span style="color:#682ae9"><i>ca-ES</i></span> Catala,
+                </p>
+                <p>
+                  <span style="color:#682ae9"><i>ge-DE</i></span> Deutsch
+                </p>
+              </div>
+            </li>
+            <li>
+              <h2 class="title-about">Also busy with</h2>
+              <div>
+                <p>Pet my dog</p>
+                <p>Spanish guitar</p>
+                <p>Video games</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="contact-section" id="contact">
+            <div class="header">
+              <h1>contact (<span style="color: #682ae9">'selected'</span>)</h1>
+              <p class="comment-title">// Get in touch</p>
+              <p class="resume">
+                Download my
+                <button class="btn-resume">
+                  resume <i class="fas fa-file-download"></i>
+                </button>
+              </p>
+              <i class="fab fa-github" id="github-icon"></i>
+              <p class="header-desc">
+                I am creative frontend developer, designer and illustrator. From
+                brazil, based in Berlin.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
