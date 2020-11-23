@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio</title>
   </head>
 
@@ -29,7 +29,6 @@
         </div>
       </div>
       <div class="wrapper-sections">
-
         <!-- MAIN SECTION -->
         <div class="main-section" id="main">
           <div class="mobile-nav">
@@ -47,10 +46,35 @@
             </ul>
           </nav>
           <div class="header">
-            <h1>weronika<span style="color: #682ae9">.is()</span></h1>
+            <h1
+              data-aos="fade"
+              data-aos-offset="0"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              weronika<span style="color: #74BF00">.is()</span>
+            </h1>
             <div class="subtitle">
-              <p class="surname">Weronika Grzeszczyk</p>
-              <p class="desc-header">
+              <p
+                class="surname"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                Weronika Grzeszczyk
+              </p>
+              <p
+                class="desc-header"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
                 Creative frontend developer, designer, and illustrator.
               </p>
             </div>
@@ -61,13 +85,40 @@
         <div class="work-section" id="work">
           <div></div>
           <div class="header">
-            <h1>work (<span style="color: #682ae9">'selected'</span>)</h1>
-            <p class="comment-title">
+            <h1
+              data-aos="fade"
+              data-aos-offset="-300"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              work (<span style="color: #74BF00">'selected'</span>)
+            </h1>
+            <p
+              class="comment-title"
+              class="surname"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
               // Some special projects explained in details.
             </p>
           </div>
           <ul class="list-project">
-            <li>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="-200"
+              data-aos-delay="500"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
               <img class="img-project" src="./images/project1.png" />
               <div class="details">
                 <h2>Confianca Delivery</h2>
@@ -75,7 +126,16 @@
                 <p class="desc-project">Supermarket online delivery store</p>
               </div>
             </li>
-            <li>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="-100"
+              data-aos-delay="500"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
               <img class="img-project" src="./images/project2.png" />
               <div class="details">
                 <h2>Confianca Delivery</h2>
@@ -83,7 +143,16 @@
                 <p class="desc-project">Supermarket online delivery store</p>
               </div>
             </li>
-            <li>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="-100"
+              data-aos-delay="500"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
               <img class="img-project" src="./images/project4.png" />
               <div class="details">
                 <h2>Confianca Delivery</h2>
@@ -97,62 +166,220 @@
         <!-- ABOUT SECTION -->
         <div class="about-section" id="about">
           <div class="header">
-            <h1 style="width: 50%">
-              about (<span style="color: #682ae9">'selected'</span>)
+            <h1
+              class="bubble"
+              data-aos="fade"
+              data-aos-offset="-100"
+              data-aos-delay="50"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              about (<span style="color: #74BF00">'selected'</span>)
             </h1>
-            <p class="comment-title">
+            <p
+              class="comment-title"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
               // Now something about me
             </p>
-            <p class="header-desc">
+            <p
+              class="header-desc"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="1100"
+              data-aos-once="true"
+            >
               I am creative frontend developer, designer and illustrator. From
               brazil, based in Berlin.
             </p>
           </div>
           <ul class="list-about">
-            <li>
-              <h2 class="title-about">Main skills</h2>
+            <li class="comment-title">
+              <h2
+                class="title-about"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                Main skills
+              </h2>
               <ul class="list-skills">
-                <li>Frontend development, UX/UI desingn</li>
-                <li>Javascript, CSS, HTML, Vue, jQuery, GSAP</li>
-                <li>Photoshop, Illustrator</li>
-                <li>Strategic thinking, Storytelling</li>
-                <li>E-commerce, Magento, WordPress</li>
-                <li>Graphic design, Brand design</li>
+                <li
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Frontend development, UX/UI desingn
+                </li>
+                <li
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Javascript, CSS, HTML, Vue, jQuery, GSAP
+                </li>
+                <li
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Photoshop, Illustrator
+                </li>
+                <li
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Strategic thinking, Storytelling
+                </li>
+                <li
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  E-commerce, Magento, WordPress
+                </li>
+                <li
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Graphic design, Brand design
+                </li>
               </ul>
             </li>
             <li>
-              <h2 class="title-about">Languages</h2>
+              <h2
+                class="title-about"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                Languages
+              </h2>
               <div class="skill-experience skill-one">
-                <p class="comment">// fluent</p>
-                <p>
-                  <span style="color:#682ae9"><i>pt-BR</i></span> Portugues,
+                <p
+                  class="comment"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  // fluent
                 </p>
-                <p>
-                  <span style="color:#682ae9"><i>en-US</i></span> English
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  <span style="color:#74BF00"><i>pt-BR</i></span> Portugues,
+                </p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  <span style="color:#74BF00"><i>en-US</i></span> English
                 </p>
               </div>
               <div class="skill-experience skill-two">
-                <p class="comment">// intermediate</p>
-                <p>
-                  <span style="color:#682ae9"><i>es-ES</i></span> Espanol
+                <p
+                  class="comment"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  // intermediate
+                </p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  <span style="color:#74BF00"><i>es-ES</i></span> Espanol
                 </p>
               </div>
               <div class="skill-experience skill-three">
-                <p class="comment">// basic</p>
-                <p>
-                  <span style="color:#682ae9"><i>ca-ES</i></span> Catala,
+                <p
+                  class="comment"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  // basic
                 </p>
-                <p>
-                  <span style="color:#682ae9"><i>ge-DE</i></span> Deutsch
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  <span style="color:#74BF00"><i>ca-ES</i></span> Catala,
+                </p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  <span style="color:#74BF00"><i>ge-DE</i></span> Deutsch
                 </p>
               </div>
             </li>
             <li>
-              <h2 class="title-about">Also busy with</h2>
+              <h2
+                class="title-about"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                Also busy with
+              </h2>
               <div>
-                <p>Pet my dog</p>
-                <p>Spanish guitar</p>
-                <p>Video games</p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Pet my dog
+                </p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Spanish guitar
+                </p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                  data-aos-once="true"
+                >
+                  Video games
+                </p>
               </div>
             </li>
           </ul>
@@ -160,23 +387,68 @@
 
         <!-- CONTACT SECTION -->
         <div class="contact-section" id="contact">
-            <div class="header">
-              <h1>contact (<span style="color: #682ae9">'selected'</span>)</h1>
-              <p class="comment-title">// Get in touch</p>
-              <p class="resume">
-                Download my
-                <button class="btn-resume">
-                  resume <i class="fas fa-file-download"></i>
-                </button>
-              </p>
-              <i class="fab fa-github" id="github-icon"></i>
-              <p class="header-desc">
-                I am creative frontend developer, designer and illustrator. From
-                brazil, based in Berlin.
-              </p>
-            </div>
+          <div class="header">
+            <h1
+              class="bubble"
+              data-aos="fade"
+              data-aos-offset="-100"
+              data-aos-delay="50"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              contact (<span style="color: #74BF00">'selected'</span>)
+            </h1>
+            <p
+              class="comment-title"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
+              // Get in touch
+            </p>
+            <p
+              class="resume"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
+              Download my
+              <button class="btn-resume">
+                resume <i class="fas fa-file-download"></i>
+              </button>
+            </p>
+            <i
+              class="fab fa-github"
+              id="github-icon"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="800"
+              data-aos-once="true"
+            ></i>
+            <p
+              class="header-desc"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
+              I am creative frontend developer, designer and illustrator. From
+              brazil, based in Berlin.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
