@@ -31,8 +31,35 @@
       <div class="wrapper-sections">
         <!-- MAIN SECTION -->
         <div class="main-section" id="main">
-          <div class="mobile-nav">
-            <img src="images/menu.png" class="menu-img" />
+          <!-- MOBILE NAV -->
+          <div class="mobile-nav" id="test">
+            <img
+              src="images/menu.png"
+              class="menu-img"
+              id="menu-img"
+              onclick="openMenu()"
+            />
+            <div id="dark-screen"></div>
+            <div id="menu">
+              <img
+                src="./images/close.png"
+                class="menu-close"
+                onclick="closeMenu()"
+              />
+              <nav class="navigation-mobile">
+                <ul class="nav-list-mobile">
+                  <li><a href="#main">.is()</a></li>
+                  <li><a href="#work">.work()</a></li>
+                  <li><a href="#about">.about()</a></li>
+                  <li><a href="#contact">.contact()</a></li>
+                  <li>
+                    <a href="https://github.com/vercia" target="_blank"
+                      ><i class="fab fa-github" id="github-mobile"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
           <nav class="navigation">
             <ul class="nav-list">
@@ -41,7 +68,9 @@
               <li><a href="#about">.about()</a></li>
               <li><a href="#contact">.contact()</a></li>
               <li>
-                <a><i class="fab fa-github"></i></a>
+                <a href="https://github.com/vercia" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
               </li>
             </ul>
           </nav>
@@ -75,7 +104,7 @@
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                Creative frontend developer, designer, and illustrator.
+                Creative frontend developer and designer
               </p>
             </div>
           </div>
@@ -105,7 +134,7 @@
               data-aos-duration="800"
               data-aos-once="true"
             >
-              // Some special projects explained in details.
+              // Some projects which I created
             </p>
           </div>
           <ul class="list-project">
@@ -121,9 +150,12 @@
             >
               <img class="img-project" src="./images/project1.png" />
               <div class="details">
-                <h2>Confianca Delivery</h2>
-                <p class="comment">// 2018 - BizCommerce</p>
-                <p class="desc-project">Supermarket online delivery store</p>
+                <h2>Diet App</h2>
+                <p class="comment">// React Native, Expo</p>
+                <p class="desc-project">
+                  Mobile diet app created with React Native, Expo and Edamam API
+                  (in progress)
+                </p>
               </div>
             </li>
             <li
@@ -138,9 +170,12 @@
             >
               <img class="img-project" src="./images/project2.png" />
               <div class="details">
-                <h2>Confianca Delivery</h2>
-                <p class="comment">// 2018 - BizCommerce</p>
-                <p class="desc-project">Supermarket online delivery store</p>
+                <h2>Youtube Clone</h2>
+                <p class="comment">// React Native, Expo</p>
+                <p class="desc-project">
+                  Clone mobile YouTube app using React Native, Expo, YouTube API
+                  v3
+                </p>
               </div>
             </li>
             <li
@@ -155,9 +190,30 @@
             >
               <img class="img-project" src="./images/project4.png" />
               <div class="details">
-                <h2>Confianca Delivery</h2>
-                <p class="comment">// 2018 - BizCommerce</p>
-                <p class="desc-project">Supermarket online delivery store</p>
+                <h2>Simple Form</h2>
+                <p class="comment">// ReactJS</p>
+                <p class="desc-project">
+                  Simple Form - fun with array methods, created with ReactJS
+                </p>
+              </div>
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="-100"
+              data-aos-delay="500"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              <img class="img-project" src="./images/project5.png" />
+              <div class="details">
+                <h2>Glint - template</h2>
+                <p class="comment">// ReactJS</p>
+                <p class="desc-project">
+                  Sample website created with ReactJS (only for desktop)
+                </p>
               </div>
             </li>
           </ul>
@@ -167,9 +223,8 @@
         <div class="about-section" id="about">
           <div class="header">
             <h1
-              class="bubble"
               data-aos="fade"
-              data-aos-offset="-100"
+              data-aos-offset="0"
               data-aos-delay="50"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
@@ -195,8 +250,7 @@
               data-aos-duration="1100"
               data-aos-once="true"
             >
-              I am creative frontend developer, designer and illustrator. From
-              brazil, based in Berlin.
+              I am beginner frontend developer, I like learn new techonologies and tools
             </p>
           </div>
           <ul class="list-about">
@@ -217,7 +271,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Frontend development, UX/UI desingn
+                  Frontend development, a little bit UX/UI design
                 </li>
                 <li
                   data-aos="fade-left"
@@ -225,7 +279,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Javascript, CSS, HTML, Vue, jQuery, GSAP
+                  Javascript, CSS, HTML
                 </li>
                 <li
                   data-aos="fade-left"
@@ -233,7 +287,10 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Photoshop, Illustrator
+                  React, React Native
+                </li>
+                <li data-aos="fade-left" data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
+                  Github, Git
                 </li>
                 <li
                   data-aos="fade-left"
@@ -241,7 +298,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Strategic thinking, Storytelling
+                  Figma, Adobe XD
                 </li>
                 <li
                   data-aos="fade-left"
@@ -249,15 +306,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  E-commerce, Magento, WordPress
-                </li>
-                <li
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                >
-                  Graphic design, Brand design
+                  Strategic thinking
                 </li>
               </ul>
             </li>
@@ -287,15 +336,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  <span style="color:#74BF00"><i>pt-BR</i></span> Portugues,
-                </p>
-                <p
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                >
-                  <span style="color:#74BF00"><i>en-US</i></span> English
+                  <span style="color:#74BF00"><i>pl-PL</i></span> Polish,
                 </p>
               </div>
               <div class="skill-experience skill-two">
@@ -314,7 +355,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  <span style="color:#74BF00"><i>es-ES</i></span> Espanol
+                  <span style="color:#74BF00"><i>en-US</i></span> English
                 </p>
               </div>
               <div class="skill-experience skill-three">
@@ -333,15 +374,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  <span style="color:#74BF00"><i>ca-ES</i></span> Catala,
-                </p>
-                <p
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                >
-                  <span style="color:#74BF00"><i>ge-DE</i></span> Deutsch
+                  <span style="color:#74BF00"><i>es-ES</i></span> Espanol
                 </p>
               </div>
             </li>
@@ -362,7 +395,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Pet my dog
+                  Pet my cat
                 </p>
                 <p
                   data-aos="fade-left"
@@ -370,7 +403,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Spanish guitar
+                  Books
                 </p>
                 <p
                   data-aos="fade-left"
@@ -378,7 +411,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Video games
+                  Mobile games
                 </p>
               </div>
             </li>
@@ -389,7 +422,6 @@
         <div class="contact-section" id="contact">
           <div class="header">
             <h1
-              class="bubble"
               data-aos="fade"
               data-aos-offset="-100"
               data-aos-delay="50"
@@ -422,14 +454,16 @@
                 resume <i class="fas fa-file-download"></i>
               </button>
             </p>
-            <i
-              class="fab fa-github"
-              id="github-icon"
-              data-aos="fade-left"
-              data-aos-delay="300"
-              data-aos-duration="800"
-              data-aos-once="true"
-            ></i>
+            <a href="https://github.com/vercia" target="_blank">
+              <i
+                class="fab fa-github"
+                id="github-icon"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
+              ></i>
+            </a>
             <p
               class="header-desc"
               data-aos="fade-left"
@@ -437,8 +471,7 @@
               data-aos-duration="800"
               data-aos-once="true"
             >
-              I am creative frontend developer, designer and illustrator. From
-              brazil, based in Berlin.
+            werawera112@gmail.com
             </p>
           </div>
         </div>
@@ -446,9 +479,25 @@
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       AOS.init();
+      var scroll = new SmoothScroll('a[href*="#"]');
+
+      const openMenu = () => {
+        document.getElementById('dark-screen').style.opacity = '0.9';
+        document.getElementById('menu').style.right = '0vw';
+        // document.getElementById('test').style.overflow='visible'
+        document.getElementById('menu-img').style.display = 'none';
+      };
+
+      const closeMenu = () => {
+        document.getElementById('dark-screen').style.opacity = '0';
+        document.getElementById('menu').style.right = '-100vw';
+        document.getElementById('menu-img').style.display = 'block';
+        // document.getElementById('test').style.overflow = 'hidden'
+      };
     </script>
   </body>
 </html>
