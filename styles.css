@@ -1,6 +1,6 @@
 :root {
   --bg: #0e1212;
-  --purple: #74BF00;
+  --green: #74bf00;
   --light: #dbdbdb;
   --gray: gray;
   --comment: #555555;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-size: 1.6em;
-  color: var(--purple);
+  color: var(--green);
 }
 
 .wrapper-sections {
@@ -44,12 +44,15 @@ h2 {
   margin: 0;
 }
 
-.list-about, .list-project, .list-skills {
+.list-about,
+.list-project,
+.list-skills {
   padding: 0;
   list-style: none;
 }
 
-.about-section ,.contact-section {
+.about-section,
+.contact-section {
   margin-top: 15vh;
 }
 
@@ -78,10 +81,72 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navigation-mobile {
+  position: absolute;
+  right: 15px;
+  bottom: 40px;
+  width: 100%;
+  z-index: 10;
+}
+
+#menu {
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
+  right: -100vw;
+  transition: 1s;
+}
+
+#dark-screen {
+  background-color: var(--bg);
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.menu-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 10%;
+  z-index: 2;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-list-mobile li {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.nav-list-mobile li a {
+  text-decoration: none;
+  color: var(--light);
+  font-size: 1.7em;
+}
+
+#github-mobile {
+  color: var(--green);
+  font-size: 1.2em;
 }
 
 .menu-img {
   padding: 15px;
+  z-index: 2;
 }
 
 .header {
@@ -90,7 +155,7 @@ h2 {
 }
 
 .surname {
-  color: var(--purple);
+  color: var(--green);
   margin-bottom: 15px;
   margin-top: 8px;
 }
@@ -154,7 +219,7 @@ h2 {
 .bullet > li:before {
   content: '\25CF';
   font-size: 20px;
-  color: var(--purple);
+  color: var(--green);
 }
 
 /* WORKS SECTION */
@@ -211,7 +276,7 @@ h2 {
 }
 
 .header-desc {
-  color: var(--purple);
+  color: var(--green);
   width: 95%;
   font-weight: 300;
   margin: 0;
@@ -255,15 +320,16 @@ h2 {
   height: 30px;
   width: 44%;
   border-radius: 30px;
-  background-color: var(--purple);
+  background-color: var(--green);
   color: var(--bg);
   font-size: 0.9em;
   font-family: Roboto Mono;
   font-weight: bold;
+  outline-color: var(--gray);
 }
 
 #github-icon {
-  color: var(--purple);
+  color: var(--green);
   font-size: 1.6em;
 }
 
@@ -274,7 +340,19 @@ h2 {
     grid-gap: 4%;
   }
 
-   .surname {
+  .menu-close {
+    width: 5%;
+  }
+
+  .nav-list-mobile li a {
+    font-size: 2.2em;
+  }
+
+  #github-mobile {
+    font-size: 1.4em;
+  }
+
+  .surname {
     margin-bottom: 25px;
     font-size: 1.1em;
   }
@@ -335,7 +413,7 @@ h2 {
   .contact-section {
     margin-bottom: 20%;
   }
-  
+
   .btn-resume {
     width: 20%;
   }
@@ -344,7 +422,7 @@ h2 {
 @media (min-width: 1024px) {
   .wrapper {
     margin-left: 25%;
-    grid-gap: 2%;
+    grid-gap: 3%;
   }
 
   .navigation {
@@ -370,12 +448,12 @@ h2 {
   }
 
   .nav-list a:hover {
-    color: var(--purple);
+    color: var(--green);
     transition-duration: 0.5s;
   }
 
   .fab {
-    color: var(--purple);
+    color: var(--green);
     font-size: 1.4em;
     margin-left: 5px;
   }
@@ -387,6 +465,7 @@ h2 {
 
   .menu-img {
     display: none;
+    visibility: hidden;
   }
 
   h1 {
@@ -400,6 +479,10 @@ h2 {
 
   .header-desc {
     width: 100%;
+  }
+
+  .desc-project {
+    width: 50%;
   }
 
   .title-about {
@@ -428,15 +511,17 @@ h2 {
   }
 }
 
-
 @media (min-width: 1440px) {
+  .details {
+    width: 100%;
+  }
+
   .contact-section {
     height: 60vh;
     margin-bottom: 0%;
   }
 
   .btn-resume {
-    width: 25%;
+    width: 20%;
   }
 }
-
