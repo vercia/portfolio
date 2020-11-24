@@ -253,6 +253,10 @@ h2 {
   padding-top: 50px;
 }
 
+.list-project li a {
+  text-decoration: none;
+}
+
 .details {
   margin-top: 8px;
 }
@@ -321,11 +325,15 @@ h2 {
   width: 44%;
   border-radius: 30px;
   background-color: var(--green);
-  color: var(--bg);
   font-size: 0.9em;
-  font-family: Roboto Mono;
-  font-weight: bold;
   outline-color: var(--gray);
+}
+
+.btn-resume a {
+  font-family: Roboto Mono;
+  text-decoration: none;
+  color: var(--bg);
+  font-weight: bold;
 }
 
 #github-icon {
@@ -384,7 +392,7 @@ h2 {
     font-size: 22px;
   }
 
-  .list-project li {
+  .list-project li, .list-project li a {
     display: flex;
   }
 
