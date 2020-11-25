@@ -109,7 +109,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  position: absolute;
+  position: fixed;
   transition: 0.5s;
 }
 
@@ -322,7 +322,7 @@ h2 {
 .btn-resume {
   border: none;
   height: 30px;
-  width: 44%;
+  width: 48%;
   border-radius: 30px;
   background-color: var(--green);
   font-size: 0.9em;
