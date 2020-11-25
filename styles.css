@@ -59,9 +59,10 @@ h2 {
 /* MAIN SECTION */
 
 .main-section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
+  position: absolute;
   overflow-x: hidden;
 }
 
@@ -180,7 +181,6 @@ h2 {
 .container-bar {
   position: relative;
   margin-top: 50vh;
-  height: 100%;
 }
 
 .bar-top {
@@ -228,7 +228,7 @@ h2 {
 .work-section {
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
+  margin-top: 100vh;
   overflow-x: hidden;
 }
 
