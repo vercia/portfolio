@@ -145,8 +145,10 @@ h2 {
 }
 
 .menu-img {
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 10px;
   z-index: 2;
+  position: fixed;
 }
 
 .header {
