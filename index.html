@@ -537,6 +537,7 @@
 
       const openMenu = () => {
         document.getElementById('dark-screen').style.opacity = '0.9';
+        document.getElementById('dark-screen').style.zIndex = '1';
         document.getElementById('menu').style.right = '0vw';
         // document.getElementById('test').style.overflow='visible'
         document.getElementById('menu-img').style.display = 'none';
@@ -544,6 +545,7 @@
 
       const closeMenu = () => {
         document.getElementById('dark-screen').style.opacity = '0';
+        document.getElementById('dark-screen').style.zIndex = '-1';
         document.getElementById('menu').style.right = '-100vw';
         document.getElementById('menu-img').style.display = 'block';
         // document.getElementById('test').style.overflow = 'hidden'
