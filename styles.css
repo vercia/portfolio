@@ -89,7 +89,7 @@ h2 {
 .navigation-mobile {
   position: absolute;
   right: 15px;
-  bottom: 40px;
+  bottom: 70px;
   width: 100%;
   z-index: 10;
 }
@@ -151,7 +151,7 @@ h2 {
 
 .header {
   position: relative;
-  top: 3%;
+  /* top: 3%; */
 }
 
 .surname {
