@@ -197,7 +197,7 @@ h2 {
 .bar {
   height: 50vh;
   position: fixed;
-  top: 50%;
+  top: 50vh;
   border-image: linear-gradient(
     to bottom,
     rgba(116, 191, 0, 1) 0%,
