@@ -393,7 +393,8 @@ h2 {
     font-size: 22px;
   }
 
-  .list-project li, .list-project li a {
+  .list-project li,
+  .list-project li a {
     display: flex;
   }
 
@@ -532,5 +533,19 @@ h2 {
 
   .btn-resume {
     width: 20%;
+  }
+}
+
+@media (min-width: 320px) and (orientation: landscape) {
+  .navigation-mobile {
+    bottom: 1vh;
+  }
+
+  .menu-close {
+    width: 25px;
+  }
+
+  .nav-list-mobile li a {
+    font-size: 1.4em;
   }
 }
