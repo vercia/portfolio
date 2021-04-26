@@ -31,6 +31,10 @@ h2 {
   color: var(--green);
 }
 
+a {
+  color: transparent;
+}
+
 .wrapper-sections {
   display: flex;
   flex-direction: column;
@@ -139,7 +143,15 @@ h2 {
   font-size: 1.7em;
 }
 
+.nav-list-mobile-icons {
+  display: flex;
+}
+
 #github-mobile {
+  padding-right: 20px;
+}
+
+#github-mobile, #linkedin-mobile {
   color: var(--green);
   font-size: 1.2em;
 }
@@ -337,7 +349,7 @@ h2 {
   font-weight: bold;
 }
 
-#github-icon {
+#github-icon, #linkedin-icon {
   color: var(--green);
   font-size: 1.6em;
 }
@@ -357,7 +369,7 @@ h2 {
     font-size: 2.2em;
   }
 
-  #github-mobile {
+  #github-mobile, #linkedin-mobile {
     font-size: 1.4em;
   }
 
@@ -507,7 +519,7 @@ h2 {
     font-size: 1em;
   }
 
-  #github-icon {
+  #github-icon, #linkedin-icon {
     font-size: 2em;
   }
 

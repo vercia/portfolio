@@ -55,11 +55,18 @@
                   <li onclick="closeMenu()"><a href="#work">.work()</a></li>
                   <li onclick="closeMenu()"><a href="#about">.about()</a></li>
                   <li onclick="closeMenu()"><a href="#contact">.contact()</a></li>
+                  <div class="nav-list-mobile-icons">
                   <li>
                     <a href="https://github.com/vercia" target="_blank"
                       ><i class="fab fa-github" id="github-mobile"></i
                     ></a>
                   </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/weronika-grzeszczyk-0a7a391b4" target="_blank"
+                      ><i class="fab fa-linkedin" id="linkedin-mobile"></i
+                    ></a>
+                  </li>
+                </div>
                 </ul>
               </nav>
             </div>
@@ -73,6 +80,11 @@
               <li>
                 <a href="https://github.com/vercia" target="_blank"
                   ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/weronika-grzeszczyk-0a7a391b4" target="_blank"
+                  ><i class="fab fa-linkedin"></i
                 ></a>
               </li>
             </ul>
@@ -246,12 +258,12 @@
               <a href="https://vercia.github.io/todo-multi-platform/" target="_blank">
                 <img class="img-project" src="./images/project4.png" alt="todo" />
                 <div class="details">
-                  <h2>ToDo List - multiplatform</h2>
+                  <h2>ToDo List</h2>
                   <p class="comment">
-                    // ReactJS, React Natqive, Expo, Electron, Cypress.io
+                    // ReactJS, React Native, Expo, Electron, Cypress.io
                   </p>
                   <p class="desc-project">
-                    ToDo List App available on web, mobile and desktop. My first project done for engineering work. 
+                    ToDo List App available on web, mobile and desktop. 
                   </p>
                 </div>
               </a>
@@ -320,7 +332,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Javascript, CSS, HTML
+                  Javascript, CSS, HTML, RWD
                 </li>
                 <li
                   data-aos="fade-left"
@@ -336,7 +348,7 @@
                   data-aos-duration="800"
                   data-aos-once="true"
                 >
-                  Github, Git
+                  Github, Gitlab, Git
                 </li>
                 <li
                   data-aos="fade-left"
@@ -345,14 +357,6 @@
                   data-aos-once="true"
                 >
                   Figma, Adobe XD
-                </li>
-                <li
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                >
-                  Strategic thinking
                 </li>
               </ul>
             </li>
@@ -515,6 +519,17 @@
                 data-aos-once="true"
               ></i>
             </a>
+            <a href="https://www.linkedin.com/in/weronika-grzeszczyk-0a7a391b4" target="_blank">
+              <i
+                class="fab fa-linkedin"
+                id="linkedin-icon"
+                data-aos="fade-left"
+                data-aos-offset="-50"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
+              ></i>
+            </a>
             <p
               class="header-desc"
               data-aos="fade-left"
@@ -541,7 +556,6 @@
         document.getElementById('dark-screen').style.opacity = '0.9';
         document.getElementById('dark-screen').style.zIndex = '1';
         document.getElementById('menu').style.right = '0vw';
-        // document.getElementById('test').style.overflow='visible'
         document.getElementById('menu-img').style.display = 'none';
       };
 
@@ -550,7 +564,6 @@
         document.getElementById('dark-screen').style.zIndex = '-1';
         document.getElementById('menu').style.right = '-100vw';
         document.getElementById('menu-img').style.display = 'block';
-        // document.getElementById('test').style.overflow = 'hidden'
       };
     </script>
   </body>
